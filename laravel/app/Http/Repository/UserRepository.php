@@ -42,7 +42,7 @@ class UserRepository
     /**
      * 极验开始获取验证码操作
      * @param $input
-     * @return string
+     * @return mixed
      */
     public function startCaptcha($input)
     {
