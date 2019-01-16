@@ -50,7 +50,7 @@ class UserRepository
         $privateKey = env('GEE_PRIVATE_KEY');
 
         if (empty($id) || empty($privateKey) || empty($input['uuid'])) {
-            return '{"success":0,"gt":"","challenge":"","new_captcha":0}';
+            return ['success' => 0, 'gt' => '', 'challenge' => '', 'new_captcha' => 0,];
         }
         $data = array(
             "user_id" => $input['uuid'], // 网站用户id
